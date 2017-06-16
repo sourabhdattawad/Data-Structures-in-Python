@@ -1,3 +1,5 @@
+#Dynamic programming
+
 array = [12, 18, 7, 34, 30, 28, 90, 88]
 max_len_array = [0 for i in range(len(array))]
 max_len_array[0] = 1
