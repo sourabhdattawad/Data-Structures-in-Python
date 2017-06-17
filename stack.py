@@ -1,4 +1,4 @@
-class Queue:
+class Stack:
     def __init__(self):
         self.array =[]
         
@@ -8,15 +8,15 @@ class Queue:
     def remove(self):
         return self.array.pop()
     
-    def print_queue(self):
+    def print_stack(self):
         return self.array
 
-myQueue = Queue()
-myQueue.add(1)
-myQueue.add(2)
-myQueue.add(3)
-myQueue.add(4)
-print myQueue.print_queue()
-print myQueue.remove()
-print myQueue.remove()
-print myQueue.print_queue()
+myStack = Stack()
+myStack.add(1)
+myStack.add(2)
+myStack.add(3)
+myStack.add(4)
+print myStack.print_stack()
+print myStack.remove()
+print myStack.remove()
+print myStack.print_stack()
