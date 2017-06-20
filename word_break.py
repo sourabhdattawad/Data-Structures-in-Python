@@ -39,6 +39,33 @@ def dp_wordbreak():
 print dp_wordbreak()
 
 
+# string = 'ILOVEPYTHON'
+# array = ['I','LOVE','PYTHON','JAVA']
+# bool_array = [False for i in range(len(string))]
+# for i in range(0, len(string)):
+#     k  = string[:i+1]
+#     if k in array:
+#         bool_array[i] = True
+#     if bool_array[i] == True:
+#         for j in range(i+1, len(string)):
+#             k  = string[i+1:j+1]
+#             if k in array:
+#                 bool_array[j]= True
+
+# print bool_array[-1]
+# if bool_array[-1]:
+#     new_string = ""
+#     for i in range(len(string)):
+#         if bool_array[i]==True:
+#             new_string+=string[i]+' '
+#         else:
+#             new_string+=string[i]
+#     print new_string
+    
+            
+            
+
+
                 
         
         
