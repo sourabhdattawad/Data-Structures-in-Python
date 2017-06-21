@@ -16,8 +16,9 @@ for L in range(2, len(string)+1):
         else:
             j = i+L-1
             if (string[i]==string[j]):
-                max_val = L
-                start  = i
+                if L>max_val:
+                    max_val = L
+                    start  = i
                 
             matrix[i][j] = (string[i]==string[j]) and matrix[i+1][j-1]
             
