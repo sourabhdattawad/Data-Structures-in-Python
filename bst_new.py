@@ -70,6 +70,28 @@ class Node:
         
         if self.right!=None:
             self.right.kth_smallest(k)
+   
+    def level_order(self):
+        queue = []
+        root = self
+        queue.append(root)
+        while(queue !=[]):
+            k = queue.pop(0)
+            print k.data,
+            if k.left!=None:
+                queue.append(k.left)
+                
+            if k.right!=None:
+                queue.append(k.right)
+                
+    def leaf(self):
+    
+        if (self.left!=None):
+            self.left.leaf()
+        if self.left==None and self.right==None:
+            print self.data,
+        if (self.right!=None):
+            self.right.leaf()
             
   
                 
